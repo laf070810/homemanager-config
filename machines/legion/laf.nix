@@ -1,7 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ../../modules/git.nix ];
+  imports = [
+    ../../modules/git.nix
+    ../../modules/pixi.nix
+  ];
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
